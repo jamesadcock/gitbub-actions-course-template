@@ -18,7 +18,7 @@ jobs:
         run: 
           npm install
           npm run build
-      - uses: actions/upload-artifcat@master
+      - uses: actions/upload-artifact@master
         with:
           name: webpack artifacts
           path: public/
@@ -34,7 +34,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/download-artifcat@master
+    - uses: actions/download-artifact@master
       with:
         name: webpack artifacts
         path: public
