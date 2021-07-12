@@ -22,6 +22,7 @@ export default class Game {
   }
 
   rowWin () {
+    let test;
     let win = false
     for (let r = 0; r < 3; r++) {
       const row = this.board[r]
